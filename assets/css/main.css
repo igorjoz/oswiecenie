@@ -1,0 +1,558 @@
+body {
+    background-color: #2F3336;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    word-spacing: 0.5px;
+    font-size: 19px;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================= */
+/*          headers          */
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px #000;
+    display: inline;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px #000;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 1.5px 1.5px #000;
+}
+
+h5 {
+    font-size: 25px;
+    margin: 20px 0 13px 0;
+    font-weight: 700;
+}
+
+/* ========================= */
+/* paragraphs & links & selection */
+
+p {
+    text-align: justify;
+}
+
+/* links */
+
+a:link {
+    color: #FF751F;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ff5202;
+    text-decoration: none;
+}
+
+a:active {
+    background-color: #ff6a0e;
+    color: #FFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* bold links */
+
+a b {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+a:visited b {
+    color: #e4e4e4;
+    text-decoration: underline;
+}
+
+a:hover b {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+a:active b {
+    background-color: #ff6a0e;
+    color: #FFF;
+}
+
+/* selection - webkit & moz */
+
+::-webkit-selection,
+b::-webkit-selection {
+    color: rgba(0, 0, 0, 0.99);
+    background-color: rgba(255, 248, 210, 0.99);
+}
+
+h2::-webkit-selection,
+a b::-webkit-selection,
+a i::-webkit-selection,
+a::-webkit-selection {
+    background-color: rgba(0, 0, 0, 0.99);
+    color: rgba(5, 176, 255, 0.99);
+}
+
+::-moz-selection,
+b::-moz-selection {
+    color: rgba(0, 0, 0, 0.99);
+    background-color: rgba(255, 248, 210, 0.99);
+}
+
+h2::-moz-selection,
+a b::-moz-selection,
+a i::-moz-selection,
+a::-moz-selection {
+    background-color: rgba(0, 0, 0, 0.99);
+    color: rgba(5, 176, 255, 0.99);
+}
+
+/* selection - general */
+
+::selection,
+b::selection {
+    color: rgba(0, 0, 0, 0.99);
+    background-color: rgba(255, 248, 210, 0.99);
+}
+
+h2::selection,
+a b::selection,
+a i::selection,
+a::selection {
+    background-color: rgba(0, 0, 0, 0.99);
+    color: rgba(5, 176, 255, 0.99);
+}
+
+
+/* ========================= */
+/*          other            */
+
+b {
+    font-weight: 700;
+}
+
+hr {
+    color: #FFF;
+}
+
+.fLeft {
+    float: left;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.listIntro {
+    font-size: 22px;
+}
+
+/* main content wrapper --> width (media queries) */
+/* 
+
+!
+!
+!
+
+do poprawy - nie wszyskie media queries działają
+
+
+main {
+    background-color: red;
+}
+
+article {
+    background-color: green;
+}
+
+body {
+    background-color: yellow;
+}
+
+#main-content-wrapper {
+    background-color: purple;
+} */
+
+
+#main-content-wrapper {
+    width: 70%;
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 0;
+}
+
+@media (max-width: 1600px) {
+    #main-content-wrapper {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1300px) {
+    #main-content-wrapper {
+        width: 80%;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+/* @media (max-width: 900px) {
+    #main-content-wrapper {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+} */
+
+/* full title (if there's enough space) */
+
+@media (min-width: 1100px) {
+    div#logo>div>a>h1>span:before {
+        content: " bez tajemnic";
+    }
+}
+
+/* custom scrollbar (Firefox and IE not supported) */
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #AAA;
+}
+
+::-webkit-scrollbar-thumb {
+    /* background: #333; */
+    background: #000;
+    border-radius: 4px;
+}
+
+
+/*  --------------------------  */
+/*  --------------------------  */
+/*  --------------------------  */
+/*              logo            */
+
+#logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B1D1F;
+}
+
+#logoimg {
+    width: 70px;
+    border-radius: 35px;
+    margin: 27px 30px 27px 0;
+}
+
+#logo a {
+    color: #FFF;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out;
+}
+
+#logo a:hover {
+    color: #E6AB45;
+    text-decoration: none;
+}
+
+
+/*  --------------------------  */
+/*  --------------------------  */
+/*  --------------------------  */
+/*          top navigation      */
+
+#topnav {
+    background-color: #E3681B;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    margin-bottom: 40px;
+}
+
+.menu {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 12px 10px 8px 10px;
+
+    min-height: 46px;
+    line-height: 200%;
+
+    vertical-align: middle;
+}
+
+.menu>li {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #0A2B42;
+}
+
+.menu>li:first-child {
+    border-left: 1px solid #0A2B42;
+}
+
+.menu a {
+    color: #FFF;
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.menu a:hover {
+    background-color: #E3401B;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menu a:active {
+    background-color: #ff2600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 25px;
+
+    transition: all 0.1s ease-in-out;
+}
+
+
+/*  --------------------------  */
+/*  --------------------------  */
+/*  --------------------------  */
+/*           footer             */
+
+#footer {
+    font-family: 'Sriracha', cursive;
+    font-size: 22px;
+    font-weight: 400;
+
+    min-height: 50px;
+    width: 100%;
+    background-color: #454B4F;
+    margin-top: 10px;
+    padding: 30px 0 25px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-name {
+    font-size: 24px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding-right: 2px;
+}
+
+.author-name:first-child {
+    padding-left: 20px;
+}
+
+.space {
+    width: 15px;
+}
+
+#csharp {
+    height: 45px;
+    display: inline-block;
+}
+
+
+/*  --------------------------  */
+/*  --------------------------  */
+/*  --------------------------  */
+/*       index / start          */
+
+.regluar-text {
+    float: left;
+}
+
+.regular-text a b {
+    font-size: 24px;
+    text-shadow: 1px 1px #000;
+    padding-right: 8px;
+}
+
+#shakespeare {
+    padding-right: 25px;
+    padding-bottom: 15px;
+}
+
+#shakespeare>img {
+    height: 475px;
+    border-radius: 15px;
+}
+
+#theatre {
+    padding: 30px 45px 20px 0;
+}
+
+#theatre>img {
+    height: 350px;
+}
+
+ul {
+    margin-top: 8px;
+}
+
+
+/*  --------------------------  */
+/*  --------------------------  */
+/*  --------------------------  */
+/*       streszczenie           */
+
+.credits-important {
+    margin-top: 30px;
+    text-align: center;
+    text-shadow: 1.5px 1.5px #000;
+}
+
+.credits-important span {
+    color: #FF1E00;
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.credits-important a {
+    color: #FF1E00;
+    text-decoration: underline;
+}
+
+.credits-important a:hover {
+    color: #E20E00;
+}
+
+.credits-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.credits-info a {
+    color: #12DE00;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.credits-info a:hover {
+    color: #12DE00;
+    text-decoration: underline;
+}
+
+#main-summary {
+    font-size: 1.12em;
+}
+
+.summary-intro {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+#schedule-of-events li {
+    padding-bottom: 10px;
+}
+
+#schedule-of-events li:last-child {
+    padding-bottom: 20px;
+}
+
+
+/*  --------------------------  */
+/*  --------------------------  */
+/*  --------------------------  */
+/*          bohaterowie         */
+
+.important-hero-description>header>h3 {
+    margin: 20px 0 15px 0;
+}
+
+.important-hero-description:first-child>header>h3 {
+    font-size: 36px;
+    text-shadow: 2px 2px #000;
+}
+
+.important-hero-description>p:last-child {
+    padding-bottom: 10px;
+}
+
+.important-hero-description>p:first-of-type {
+    margin-top: 15px;
+}
+
+.hero-description>header>h4 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 19px 0 0 0;
+    text-shadow: .5px .5px #000;
+}
+
+.hero-description>p:last-child {
+    margin-bottom: 20px;
+}
+
+.hero-description>p:first-of-type {
+    margin-top: 9px;
+}
+
+
+/*  --------------------------  */
+/*  --------------------------  */
+/*  --------------------------  */
+/*            quiz              */
+
+#download-game {
+    padding-top: 55px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+
+#img-download-game {
+    transition: opacity .1s ease-in-out;
+    padding: 10px;
+    border-radius: 50px
+}
+
+#img-download-game:hover {
+    opacity: 0.55;
+}
+
+.bigger-font-size {
+    font-size: 22px;
+}
+
+#download-instruction>li {
+    font-size: 20px;
+}
+
+.redColor {
+    color: #ff1c1c;
+    font-weight: 600;
+}
