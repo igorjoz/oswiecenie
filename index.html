@@ -4,35 +4,18 @@
 <head>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- site info -->
-    <title>Makbet - akumulator wiedzy - start</title>
-    <meta name="description" content="">
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <meta name="keywords" content="">
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
+    <title>Oświecenie</title>
+    <meta name="description"
+        content="Oświecenie - zbiór informacji - pojęcia - filozofia - motywy - oś czasu - lektury">
+    <meta name="keywords"
+        content="oświecenie, enlightenment, filozofia, filozofia oświecenia, filozofia oświeceniowa, krasicki, satyra, satyry, bajki, bajki krasickiego">
     <meta name="author" content="Igor Józefowicz">
 
     <!-- favicon -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
-    <!-- !!! -->
+
 
     <!-- fonts: Montserrat 500, 600, 700 & Sriracha 400-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
@@ -43,63 +26,71 @@
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
     <link rel="stylesheet" href="assets/fontello/css/fontello.css" type="text/css">
 
-    <!-- jquery 3.5.1 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
 
 <body>
 
     <!-- logo -->
-    <div id="logo" class="unselectable">
-        <div class="fLeft">
-            <a href="index.php?page=start">
-                <img id="logoimg" src="assets/img/shakespeare.jpg" alt="William Shakespeare">
-            </a>
-        </div>
+    <div class="logo unselectable">
+        <a href="index.php?p=start" class="logo__a logo__a--image">
+            <div class="test">
+                <img class="logo__image" src="assets/img/shakespeare.jpg" alt="William Shakespeare">
+            </div>
+        </a>
 
-        <div class="fLeft">
-            <a href="index.php?page=start">
-                <h1>Shakespeare<span></span> - Makbet</h1>
-            </a>
-        </div>
-
-        <div style="clear: both;"></div>
+        <a href="index.php?p=start" class="logo__a logo__a--title">
+            <h1 class="logo__text">oświecenie</h1>
+        </a>
     </div>
 
+    <!-- fill .logo__text with proper value -->
+    <!-- <script src="assets/js/title.js"></script> -->
+
     <!-- top navigation -->
-    <nav id="topnav" class="unselectable">
+    <!-- <nav class="topnav unselectable">
         <ul class="menu">
-            <li><a href="index.php?page=start" title="Informacje o Shakespearze i teatrze elżbietańskim">Shakespeare i
-                    teatr</a></li>
-            <li><a href="index.php?page=streszczenie"
-                    title="Streszczenie Makbeta + opracowanie w formie filmu">Streszczenie</a></li>
-            <li><a href="index.php?page=bohaterowie"
-                    title="Cech charakteru i zachowania bohaterów w Makbecie">Bohaterowie</a></li>
-            <li><a href="index.php?page=quiz" title="Sprawdź się w quizie o Makbecie!">Quiz</a></li>
+            <li class="menu__item">
+                <a href="index.php?p=start" title="Informacje o Shakespearze i teatrze elżbietańskim">Shakespeare i
+                    teatr</a>
+            </li>
+
+            <li class="menu__item">
+                <a href="index.php?p=streszczenie"
+                    title="Streszczenie Makbeta + opracowanie w formie filmu">Streszczenie</a>
+            </li>
+
+            <li class="menu__item">
+                <a href="index.php?p=bohaterowie"
+                    title="Cech charakteru i zachowania bohaterów w Makbecie">Bohaterowie</a>
+            </li>
+
+            <li class="menu__item">
+                <a href="index.php?p=quiz" title="Sprawdź się w quizie o Makbecie!">Quiz</a>
+            </li>
         </ul>
-    </nav>
+    </nav> -->
 
     <!-- main content -->
-    <div id="main-content-wrapper">
+    <div class="main-content-wrapper">
 
         <main>
             <article>
-                <header>
-                    <h2>Shakespeare i teatr elżbietański</h2>
-                </header>
 
-                <hr>
-
-                <!-- Shakespeare section -->
+                <!-- definition -->
                 <section>
+                    <header>
+                        <h2 class="section-header">krótka definicja</h2>
+                    </header>
 
-                    <div id="shakespeare" class="fLeft unselectable">
-                        <img src="assets/img/shakespeare-big.jpg" alt="William Shakespeare">
+                    <hr>
+
+                    <div class="flex-box-test">
+                        <div class="shakespeare fLeft unselectable">
+                            <img src="assets/img/shakespeare-big.jpg" class="shakespeare__image"
+                                alt="William Shakespeare">
+                        </div>
                     </div>
-
                     <div class="regular-text">
-
                         <p>
                             <a href="https://pl.wikipedia.org/wiki/William_Shakespeare" target="_blank"
                                 title="Dowiedź się więcej na Wikipedii!"><b>William Shakespeare</b></a> (1564 – 1616 r.,
@@ -108,11 +99,9 @@
                             współwłaścicielem <a href="https://pl.wikipedia.org/wiki/Globe_Theatre" target="_blank"
                                 title="Dowiedź się więcej na Wikipedii!"><i>Globe Theatre</i></a>.
                         </p>
-
                         <p>
                             W szkole średniej uczył się łaciny, historii, literatury antycznej i retoryki.
                         </p>
-
                         <p>
                             Napisał m.in. dramaty: <a href="https://pl.wikipedia.org/wiki/Romeo_i_Julia" target="_blank"
                                 title="Dowiedź się więcej na Wikipedii!"><i>„Romeo i Julia”</i></a>, <a
@@ -129,7 +118,6 @@
                             języków
                             oraz wystawiano w wielu popularnych miejscach.
                         </p>
-
                         <p class="curiosity">
                             Ciekawostki:
                             <br>
@@ -137,7 +125,6 @@
                             <br>
                             Wprowadził wiele neologizmów do języka angielskiego (ok. 1600 słów).
                         </p>
-
                         <p>
                             Prace Shakespeare\'a miały bardzo duży wpływ na teatr jego czasów (teatr elżbietański,
                             więcej o
@@ -147,7 +134,6 @@
                             Z jego utworów mogli jednocześnie korzystać intelektualiści, jak i zwykli ludzie poszukujący
                             rozrywki i odpoczynku od ciężkiej rzeczywistości.
                         </p>
-
                         <p>
                             Dzieła Shakespearea były w większości pisane <a href="https://pl.wikipedia.org/wiki/Wiersz"
                                 target="_blank" title="Dowiedź się więcej na Wikipedii!">wierszem</a>, choć zdarzało mu
@@ -158,7 +144,6 @@
                                 href="https://pl.wikipedia.org/wiki/Gra_s%C5%82%C3%B3w" target="_blank"
                                 title="Dowiedź się więcej na Wikipedii!">grę słów</a>.
                         </p>
-
                         <p class="curiosity">
                             Ciekawostka:<br>
                             Wiele osób uważa, że niektóre dzieła przypisywane Shakespearowi w rzeczywistości mają innych
@@ -168,28 +153,19 @@
                             stu procentach. Ta sytuacja ma zapewne związek z nie do końca jasnymi (i właściwie ówcześnie
                             nieistniejącymi) prawami autorskimi.
                         </p>
-
                         <p>
                             Shakespeare został doceniony przez władze królewskie, które przyznały mu tytuł szlachecki.
                         </p>
-
                     </div>
-
                     <div style="clear: both;"></div>
-
                 </section>
-
                 <!-- sekcja o teatrze elżbietańskim i dramacie shakespearowskim -->
                 <section>
-
                     <hr>
-
-                    <div id="theatre" class="fLeft unselectable">
-                        <img src="assets/img/theatre.png" alt="Teatr elżbietański">
+                    <div class="theatre fLeft">
+                        <img src="assets/img/theatre.png" class="theatre__image" alt="Teatr elżbietański">
                     </div>
-
                     <div class="regular-text">
-
                         <p>
                             <a href="https://pl.wikipedia.org/wiki/Teatr_el%C5%BCbieta%C5%84ski" target="_blank"
                                 title="Dowiedź się więcej na Wikipedii!"><b>Teatr elżbietański</b></a> (XVI - XVII wiek)
@@ -201,7 +177,6 @@
                             (częściowo należący
                             do Shakesparea) był najważniejszy.
                         </p>
-
                         <p>
                             Sceną było podwyższenie, otoczone z trzech stron przez widzów. Aktorzy często zwracali się
                             do
@@ -210,7 +185,6 @@
                             wiwatowanie, klaskanie, tupanie, a w przypadku znudzenia spektaklem - rzucanie w aktorów
                             drobnymi kamieniami i jedzeniem.
                         </p>
-
                         <p>
                             <b>Dekoracji było niewiele</b>, rekwizyty często były symboliczne, a bogaty i rozwinięty
                             wystrój
@@ -218,74 +192,60 @@
                             Przeciwnie do tego, stroje aktorów były bogato zdobione. Czasami aktorzy musieli ustnie
                             poinforomować widownię o porze dnia w dramacie.
                         </p>
-
                         <p>
                             Warto zauważyć, że nie da się dokładnie określić budowy, czy wszystkich cech teatru
                             elżbietańskiego, bo jest to ogólne określenie pewnej drogi, trendu - każdy teatr realizował
                             go
                             trochę inaczej.
                         </p>
-
                         <p>
                             Najważniejszym elementem widowiska były gra aktorska i tekst dramatu. Aktorzy dbali o wymowę
                             oraz swoje gesty. Co ciekawe, <b>w teatrze nie wsytępowały kobiety</b>, a role kobiet grali
                             młodzi mężczyźni o delikatnej, kobiecej urodzie.
                         </p>
-
                         <p>
                             Przedstawienia musiały <b>wzruszać, bawić, budować grozę</b>, być obfite w sensacyjne
                             wydarzenia. Często były <b>tajemnicze, zawikłane i krwawe</b>, a postacie aktorów miały
                             <b>ostrzegać, służyć przykładem, podbudowywać</b>.
                         </p>
-
-                        <p>Oprócz wyżej wymienionych <b class="listIntro">cech teatru elżbietańskiego i dramatu
-                                shakespearowskiego</b>, są to:</p>
-                        <ul>
-                            <li>
+                        <p></p>
+                        <ul class="list">
+                            Oprócz wyżej wymienionych <b>cech teatru elżbietańskiego i dramatu shakespearowskiego</b>,
+                            są to:
+                            <li class="list__item">
                                 <b>złamanie <a href="https://pl.wikipedia.org/wiki/Zasada_trzech_jedno%C5%9Bci"
                                         target="_blank" title="Dowiedź się więcej na Wikipedii!">zasady trzech
                                         jedności</a></b> (czasu, miejsca, akcji) - akcja może rozgrywać się w
                                 wielu miejscach, jest wielowątkowa, może trwać wiele lat
                             </li>
-
-                            <li>
+                            <li class="list__item">
                                 <b>rezygnacja z <a href="https://pl.wikipedia.org/wiki/Decorum" target="_blank"
                                         title="Dowiedź się więcej na Wikipedii!">decorum</a></b> - czasami dzieło
                                 również bawiło, było humorystyczne; wystepowały
                                 sceny walki; mowa potoczna
                             </li>
-
-                            <li>
+                            <li class="list__item">
                                 <b>zmienność bohaterów</b>, łatwość w popadania w skrajne emocje, skomplikowana psychika
                                 postaci; szybkie zmiany nastroju między scenami
                             </li>
-
-                            <li>
+                            <li class="list__item">
                                 występowanie <b>elementów fantastycznych</b> (np. duchów, czarownic)
                             </li>
-
-                            <li>
+                            <li class="list__item">
                                 większa ilość osób na scenie (odejście od limitu trzech osób); <b>brak chóru</b>
                             </li>
-
-                            <li>przyroda jest tłem dla scen, potęguje nastrój grozy
+                            <li class="list__item">przyroda jest tłem dla scen, potęguje nastrój grozy
                             </li>
-
-                            <li>
+                            <li class="list__item">
                                 wiele figur retorycznych
                             </li>
-
-                            <li>
+                            <li class="list__item">
                                 <b>motyw człowieka, który sam decyduje o sobie</b>
                             </li>
                         </ul>
-
                     </div>
-
                     <div style="clear:both"></div>
-
                     <hr>
-
                 </section>
             </article>
         </main>
@@ -294,26 +254,25 @@
 
     <!-- footer -->
     <footer>
-        <div id="footer" class="unselectable">
-            Twórcy projektu:
-            <span class="author-name">
-                Igor Józefowicz
-            </span>
-            <i class="icon-code"></i>
+        <div class="footer unselectable">
+            <div class="footer__intro">
+                Twórcy projektu:
+            </div>
 
-            <div class="space"></div>
+            <div class="footer__author footer__author--1">
+                <span class="footer__author-name">Igor Józefowicz</span>
+                <i class="icon-code"></i>
+            </div>
 
-            <span class="author-name">
-                Adrian Ściepura
-            </span>
-            <img id="csharp" src="assets/img/csharp.png" alt="csharp">
+            <div class="footer__author footer__author--2 footer__author--adrian">
+                <span class="footer__author-name">Adrian Ściepura</span>
+                <img class="footer__csharp-icon" src="assets/img/csharp.png" alt="csharp">
+            </div>
 
-            <div class="space"></div>
-
-            <span class="author-name">
-                Jan Walczak
-            </span>
-            <i class="icon-brush"></i>
+            <div class="footer__author footer__author--3">
+                <span class="footer__author-name">Jan Walczak</span>
+                <i class="icon-brush"></i>
+            </div>
         </div>
     </footer>
 
