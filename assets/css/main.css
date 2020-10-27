@@ -69,14 +69,18 @@ p {
   hyphens: auto;
 }
 
+a {
+  font-weight: bold;
+}
+
 a:link {
-  color: #FF751F;
+  color: #C500F5;
+  color: #E0460C;
   text-decoration: none;
 }
 
 a:visited {
   color: #ff5202;
-  text-decoration: none;
 }
 
 a:active {
@@ -252,15 +256,13 @@ hr {
   background-color: #ffe05d;
   background-color: #ff9642;
   padding: 8px 0;
-  margin-bottom: 24px;
   border-bottom: solid #000 1px;
   font-size: 0px;
 }
 
 .logo__image {
-  width: 70px;
-  border-radius: 50%;
-  margin-right: 30px;
+  width: 53px;
+  margin-right: 15px;
   -webkit-transition: -webkit-transform .3s ease-in-out;
   transition: -webkit-transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
@@ -288,6 +290,7 @@ hr {
 
 .logo__text {
   font-size: 48px;
+  color: white;
   text-shadow: 1px 1px 4px black;
   letter-spacing: 3px;
 }
@@ -373,7 +376,7 @@ hr {
 }
 
 .menu a {
-  color: #FFF;
+  color: #000;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -439,6 +442,7 @@ hr {
       align-content: center;
   font-family: 'Sriracha', cursive;
   font-weight: 400;
+  color: white;
   background-color: #454B4F;
   padding: 10px;
 }
@@ -494,16 +498,22 @@ hr {
   padding-right: 2px;
 }
 
-.footer__csharp-icon {
-  height: 30px;
+.section {
+  padding: 15px 0 40px 0;
+  background: #fff8cd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff8cd), color-stop(80%, #fff8cd), to(#ffe96e));
+  background: linear-gradient(180deg, #fff8cd 0%, #fff8cd 80%, #ffe96e 100%);
 }
 
-.section {
-  padding: 27px;
+.section:first-child {
+  padding: 20px 0 40px 0;
 }
 
 .section--odd {
-  background-color: #ffe05d;
+  padding: 0 0 100px 0;
+  background: #ffe96e;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe96e), color-stop(80%, #ffe96e), to(#fff8cd));
+  background: linear-gradient(180deg, #ffe96e 0%, #ffe96e 80%, #fff8cd 100%);
 }
 
 .regluar-text {
@@ -586,9 +596,10 @@ hr {
 
 .list {
   margin-top: 8px;
+  text-align: center;
 }
 
 .list__item {
-  margin-left: 30px;
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

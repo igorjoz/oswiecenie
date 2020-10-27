@@ -4,7 +4,6 @@
 }
 
 body {
-  // background-color: #e8e8e8;
   background-color: #fff8cd;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -65,15 +64,18 @@ p {
 // links
 
 a {
+  font-weight: bold;
 
   &:link {
-    color: #FF751F;
+    // color: #FF751F;
+    color: #C500F5;
+    color: #E0460C;
     text-decoration: none;
   }
 
   &:visited {
     color: #ff5202;
-    text-decoration: none;
+    // text-decoration: underline;
   }
 
   &:active {
@@ -237,16 +239,14 @@ hr {
   background-color: #ff9642;
   // background-color: #e8e8e8;
   padding: 8px 0;
-  margin-bottom: 24px;
   border-bottom: solid #000 1px;
 
   // preventing bug
   font-size: 0px;
 
   &__image {
-    width: 70px;
-    border-radius: 50%;
-    margin-right: 30px;
+    width: 53px;
+    margin-right: 15px;
     transition: transform .3s ease-in-out;
 
     @media (max-width: $medium) {
@@ -264,6 +264,7 @@ hr {
 
   &__text {
     font-size: 48px;
+    color: white;
     text-shadow: 1px 1px 4px black;
     letter-spacing: 3px;
     // text-shadow: #FC0 1px 0 10px;
@@ -353,7 +354,7 @@ hr {
   }
 
   & a {
-    color: #FFF;
+    color: #000;
     text-decoration: none;
 
     transition: all 0.3s ease-in-out;
@@ -410,6 +411,7 @@ hr {
 
   font-family: 'Sriracha', cursive;
   font-weight: 400;
+  color: white;
 
   background-color: #454B4F;
   padding: 10px;
@@ -448,9 +450,5 @@ hr {
     font-size: 22px;
     letter-spacing: 1px;
     padding-right: 2px;
-  }
-
-  &__csharp-icon {
-    height: 30px;
   }
 }

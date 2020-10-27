@@ -1,8 +1,24 @@
 .section {
-  padding: 27px;
+  // background-color: #fff8cd;
+  // background: rgb(255, 248, 205);
+  // background: linear-gradient(180deg, rgba(255, 248, 205, 1) 0%, rgba(255, 248, 205, 1) 80%, rgba(255, 224, 93, 1) 100%);
+  padding: 15px 0 40px 0;
+
+  background: rgb(255, 248, 205);
+  background: linear-gradient(180deg, rgba(255, 248, 205, 1) 0%, rgba(255, 248, 205, 1) 80%, rgba(255, 233, 110, 1) 100%);
+
+  &:first-child {
+    padding: 20px 0 40px 0;
+  }
 
   &--odd {
-    background-color: #ffe05d;
+    // background-color: #ffe05d;
+    padding: 0 0 100px 0;
+    // background: rgb(255, 224, 93);
+    // background: linear-gradient(180deg, rgba(255, 224, 93, 1) 0%, rgba(255, 224, 93, 1) 80%, rgba(255, 248, 205, 1) 100%);
+
+    background: rgb(255, 233, 110);
+    background: linear-gradient(180deg, rgba(255, 233, 110, 1) 0%, rgba(255, 233, 110, 1) 80%, rgba(255, 248, 205, 1) 100%);
   }
 }
 
@@ -70,8 +86,10 @@
 
 .list {
   margin-top: 8px;
+  text-align: center;
 
   &__item {
-    margin-left: 30px;
+    // margin-left: 30px;
+    list-style: none;
   }
 }
