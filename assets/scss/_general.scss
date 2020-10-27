@@ -5,7 +5,7 @@
 
 body {
   // background-color: #e8e8e8;
-  background-color: #bbbfca;
+  background-color: #fff8cd;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   word-spacing: 0.5px;
@@ -31,11 +31,13 @@ h1 {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
-  // text-shadow: 3px 3px #000;
-  // text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
-  letter-spacing: 1px;
 
   @include word-breaking;
+
+  &__hr {
+    width: 28%;
+    margin: auto;
+  }
 }
 
 h3 {
@@ -160,8 +162,8 @@ b {
 }
 
 hr {
-  color: #FFF;
-  margin: 12px 0 20px 0;
+  color: #000;
+  margin: 4px 0 12px 0;
 }
 
 .fLeft {
@@ -177,24 +179,24 @@ hr {
 
 // main-content-wrapper - width & media queries
 
-.main-content-wrapper {
+.section__inner {
   margin: 0 auto;
-  width: 65%;
+  width: 50%;
 
   @media (max-width: $extra-large) {
-    width: 75%;
+    width: 55%;
   }
 
   @media (max-width: $large) {
-    width: 80%;
+    width: 60%;
   }
 
   @media (max-width: $medium) {
-    width: 85%;
+    width: 65%;
   }
 
   @media (max-width: $small) {
-    width: 90%;
+    width: 75%;
   }
 
   @media (max-width: $extra-small) {
@@ -231,7 +233,8 @@ hr {
   align-items: center;
 
   width: 100%;
-  background-color: #495464;
+  background-color: #ffe05d;
+  background-color: #ff9642;
   // background-color: #e8e8e8;
   padding: 8px 0;
   margin-bottom: 24px;
@@ -261,7 +264,11 @@ hr {
 
   &__text {
     font-size: 48px;
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 1px 1px 4px black;
+    letter-spacing: 3px;
+    // text-shadow: #FC0 1px 0 10px;
+    // text-shadow: 1px 1px 2px red, 0 0 0.05em yellow, 0 0 0.05em yellow;
+    // text-shadow: 1px 1px 2px black, 0 0 0.04em yellow, 0 0 0.04em yellow;
   }
 
   &__a {
@@ -404,10 +411,8 @@ hr {
   font-family: 'Sriracha', cursive;
   font-weight: 400;
 
-  width: 100%;
   background-color: #454B4F;
-  margin-top: 20px;
-  padding: 25px 0 20px 0;
+  padding: 10px;
 
   @media (max-width: $medium + 105px) {
     grid-template: auto auto / auto auto;
@@ -418,7 +423,7 @@ hr {
   }
 
   &__intro {
-    font-size: 24px;
+    font-size: 20px;
 
     @media (min-width: $small) {
       padding-right: 20px;
@@ -440,12 +445,12 @@ hr {
   }
 
   &__author-name {
-    font-size: 30px;
+    font-size: 22px;
     letter-spacing: 1px;
     padding-right: 2px;
   }
 
   &__csharp-icon {
-    height: 45px;
+    height: 30px;
   }
 }

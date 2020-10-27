@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #bbbfca;
+  background-color: #fff8cd;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   word-spacing: 0.5px;
@@ -29,7 +29,6 @@ h1 {
   font-size: 30px;
   font-weight: 600;
   text-align: center;
-  letter-spacing: 1px;
   overflow-wrap: break-word;
   word-wrap: break-word;
   -ms-word-break: break-all;
@@ -38,6 +37,11 @@ h1 {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+
+.section-header__hr {
+  width: 28%;
+  margin: auto;
 }
 
 h3 {
@@ -165,8 +169,8 @@ b {
 }
 
 hr {
-  color: #FFF;
-  margin: 12px 0 20px 0;
+  color: #000;
+  margin: 4px 0 12px 0;
 }
 
 .fLeft {
@@ -180,37 +184,37 @@ hr {
   user-select: none;
 }
 
-.main-content-wrapper {
+.section__inner {
   margin: 0 auto;
-  width: 65%;
+  width: 50%;
 }
 
 @media (max-width: 1450px) {
-  .main-content-wrapper {
-    width: 75%;
+  .section__inner {
+    width: 55%;
   }
 }
 
 @media (max-width: 1200px) {
-  .main-content-wrapper {
-    width: 80%;
+  .section__inner {
+    width: 60%;
   }
 }
 
 @media (max-width: 900px) {
-  .main-content-wrapper {
-    width: 85%;
+  .section__inner {
+    width: 65%;
   }
 }
 
 @media (max-width: 600px) {
-  .main-content-wrapper {
-    width: 90%;
+  .section__inner {
+    width: 75%;
   }
 }
 
 @media (max-width: 450px) {
-  .main-content-wrapper {
+  .section__inner {
     width: 93%;
   }
 }
@@ -245,7 +249,8 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #495464;
+  background-color: #ffe05d;
+  background-color: #ff9642;
   padding: 8px 0;
   margin-bottom: 24px;
   border-bottom: solid #000 1px;
@@ -283,7 +288,8 @@ hr {
 
 .logo__text {
   font-size: 48px;
-  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+  text-shadow: 1px 1px 4px black;
+  letter-spacing: 3px;
 }
 
 .logo__a--title {
@@ -433,10 +439,8 @@ hr {
       align-content: center;
   font-family: 'Sriracha', cursive;
   font-weight: 400;
-  width: 100%;
   background-color: #454B4F;
-  margin-top: 20px;
-  padding: 25px 0 20px 0;
+  padding: 10px;
 }
 
 @media (max-width: 1005px) {
@@ -456,7 +460,7 @@ hr {
 }
 
 .footer__intro {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 @media (min-width: 600px) {
@@ -485,13 +489,21 @@ hr {
 }
 
 .footer__author-name {
-  font-size: 30px;
+  font-size: 22px;
   letter-spacing: 1px;
   padding-right: 2px;
 }
 
 .footer__csharp-icon {
-  height: 45px;
+  height: 30px;
+}
+
+.section {
+  padding: 27px;
+}
+
+.section--odd {
+  background-color: #ffe05d;
 }
 
 .regluar-text {

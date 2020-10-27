@@ -1,3 +1,11 @@
+.section {
+  padding: 27px;
+
+  &--odd {
+    background-color: #ffe05d;
+  }
+}
+
 .regluar-text {
   float: left;
 }
