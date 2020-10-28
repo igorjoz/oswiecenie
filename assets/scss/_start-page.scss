@@ -91,15 +91,23 @@
     list-style: none;
 
     &:not(:last-child) {
-      padding-bottom: 8px;
+      padding-bottom: 11px;
     }
 
     &--motive {
       font-weight: 600;
     }
+
+    &--book {
+      font-weight: 500;
+    }
   }
 
   &__motive-link {
     font-weight: 500;
+  }
+
+  &__philosophy-term {
+    font-weight: 600;
   }
 }
