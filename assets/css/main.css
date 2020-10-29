@@ -77,7 +77,7 @@ p {
 
 @media (max-width: 450px) {
   p {
-    font-size: 20px;
+    font-size: 17px;
   }
 }
 
@@ -435,74 +435,6 @@ hr {
   padding-right: 8px;
 }
 
-.shakespeare {
-  padding-right: 25px;
-  padding-bottom: 15px;
-}
-
-.shakespeare__image {
-  height: 475px;
-  border-radius: 15px;
-}
-
-@media (max-width: 1200px) {
-  .shakespeare__image {
-    height: 400px;
-  }
-}
-
-@media (max-width: 900px) {
-  .shakespeare__image {
-    height: 350px;
-  }
-}
-
-@media (max-width: 600px) {
-  .shakespeare__image {
-    height: 325px;
-  }
-}
-
-@media (max-width: 500px) {
-  .shakespeare__image {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.theatre {
-  padding: 30px 45px 20px 0;
-}
-
-.theatre__image {
-  height: 350px;
-}
-
-@media (max-width: 1200px) {
-  .theatre__image {
-    height: 300px;
-  }
-}
-
-@media (max-width: 900px) {
-  .theatre__image {
-    height: 250px;
-  }
-}
-
-@media (max-width: 600px) {
-  .theatre__image {
-    height: 215px;
-  }
-}
-
-@media (max-width: 500px) {
-  .theatre__image {
-    width: 100%;
-    height: 100%;
-  }
-}
-
 .list {
   margin-top: 26px;
   text-align: center;
@@ -523,6 +455,12 @@ hr {
 
 .list__item--book {
   font-weight: 500;
+}
+
+@media (max-width: 450px) {
+  .list__item {
+    font-size: 19px;
+  }
 }
 
 .list__motive-link {
