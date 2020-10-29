@@ -14,7 +14,7 @@ body {
 
 @media (max-width: 600px) {
   body {
-    font-size: 21px;
+    font-size: 20px;
   }
 }
 
@@ -73,6 +73,12 @@ p {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+
+@media (max-width: 450px) {
+  p {
+    font-size: 20px;
+  }
 }
 
 a {
@@ -299,6 +305,12 @@ hr {
   color: white;
   text-shadow: 1px 1px 4px black;
   letter-spacing: 3px;
+}
+
+@media (max-width: 450px) {
+  .logo__text {
+    font-size: 38px;
+  }
 }
 
 .logo__a--title {
