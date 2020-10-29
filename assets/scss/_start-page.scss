@@ -1,15 +1,15 @@
 .section {
-  padding: 15px 0 80px 0;
+  padding: 15px 0 90px 0;
 
   background: rgb(255, 248, 205);
   background: linear-gradient(180deg, rgba(255, 248, 205, 1) 0%, rgba(255, 248, 205, 1) 80%, rgba(255, 236, 125, 1) 100%);
 
   &:first-child {
-    padding: 20px 0 50px 0;
+    padding: 55px 0 90px 0;
   }
 
   &--odd {
-    padding: 10px 0 80px 0;
+    padding: 10px 0 90px 0;
 
     background: rgb(255, 236, 125);
     background: linear-gradient(180deg, rgba(255, 236, 125, 1) 0%, rgba(255, 236, 125, 1) 80%, rgba(255, 248, 205, 1) 100%);
@@ -83,7 +83,7 @@
 }
 
 .list {
-  margin-top: 20px;
+  margin-top: 26px;
   text-align: center;
 
   &__item {
@@ -91,7 +91,7 @@
     list-style: none;
 
     &:not(:last-child) {
-      padding-bottom: 11px;
+      padding-bottom: 17px;
     }
 
     &--motive {

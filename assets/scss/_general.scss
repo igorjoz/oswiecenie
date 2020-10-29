@@ -24,6 +24,10 @@ h1 {
   font-weight: 600;
   letter-spacing: 1px;
   text-shadow: 3px 3px #000;
+
+  @media (max-width: $extra-small) {
+    font-size: 40px;
+  }
 }
 
 .section-header {

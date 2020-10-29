@@ -25,6 +25,12 @@ h1 {
   text-shadow: 3px 3px #000;
 }
 
+@media (max-width: 450px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
 .section-header {
   font-size: 30px;
   font-weight: 600;
@@ -386,18 +392,18 @@ hr {
 }
 
 .section {
-  padding: 15px 0 80px 0;
+  padding: 15px 0 90px 0;
   background: #fff8cd;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff8cd), color-stop(80%, #fff8cd), to(#ffec7d));
   background: linear-gradient(180deg, #fff8cd 0%, #fff8cd 80%, #ffec7d 100%);
 }
 
 .section:first-child {
-  padding: 20px 0 50px 0;
+  padding: 55px 0 90px 0;
 }
 
 .section--odd {
-  padding: 10px 0 80px 0;
+  padding: 10px 0 90px 0;
   background: #ffec7d;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffec7d), color-stop(80%, #ffec7d), to(#fff8cd));
   background: linear-gradient(180deg, #ffec7d 0%, #ffec7d 80%, #fff8cd 100%);
@@ -486,7 +492,7 @@ hr {
 }
 
 .list {
-  margin-top: 20px;
+  margin-top: 26px;
   text-align: center;
 }
 
@@ -496,7 +502,7 @@ hr {
 }
 
 .list__item:not(:last-child) {
-  padding-bottom: 11px;
+  padding-bottom: 17px;
 }
 
 .list__item--motive {
